@@ -1,0 +1,28 @@
+<article>
+    <h2 class="title mt-5">Edit This Post</h2>
+    <hr>
+    <form class="edit-post-form">
+        <div>
+            <label for="post-title">Post Title:</label>
+            <input class="input" name="post-title" type="text" value="{{post.title}}" />
+        </div>
+        <div>
+            <label for="post-content">Post Body:</label>
+            <input name="body" id="post-body" type="text" value="{{post.body}}" />
+        </div>
+        <div class="">
+            <b class="post-username">You created this post!</b>on {{format_date post.created_at}}
+            <a href="/post/{{post.id}}" class="comments">{{post.comments.length}}</a>
+        </div>
+        <button type="submit" class="button is-success">save post</button>
+        <button type="button" class="button is-danger delete-post-btn">delete post</button>
+    </form>
+    <h2>All Comments</h2>
+    <div class="edit-post-comments">
+        {{> comments post.comments}}
+    </div>
+</article>
+
+<script src="/js/edit-post.js"></script>
+<script src="/js/delete-post.js"></script>
+<script src="/js/comment.js"></script>

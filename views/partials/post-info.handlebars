@@ -1,0 +1,16 @@
+<div class="card mb-4">
+    <header class="card-header post-title">
+        <div class="column">
+            <a href="/post/{{id}}" class="">{{title}} </a></p>
+        </div>
+    </header>
+    <div class="card-content">
+        <div class="content has-text-justified">
+            {{body}}
+        </div>
+        <div class="is-pulled-left">
+            <b class="post-username">By {{user.username}}</b>
+            on {{format_date created_at}} <a href="/post/{{id}}" class="comment">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+        </div>
+    </div>
+</div>
