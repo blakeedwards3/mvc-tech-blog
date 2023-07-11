@@ -3,7 +3,7 @@ async function newFormHandler(event) {
 
     // Get values from input fields
     const title = document.querySelector('input[name="post-title"]').value;
-    const post_body = document.querySelector('input[name="post-body]').value;
+    const post_body = document.querySelector('input[name="post-body"]').value;
 
     // POST request to '/api/posts'
     const response = await fetch(`/api/posts`, {
@@ -18,7 +18,7 @@ async function newFormHandler(event) {
     });
 
     // Check for successful response and redirect to dashboard
-    if (responds.ok) {
+    if (response.ok) {
         document.location.replace('/dashboard');
     } else {
         alert(response.statusText);
