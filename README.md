@@ -8,7 +8,7 @@ This webiste is a CMS-style blog site similar to a Wordpress site, where develop
 ## Links
 
 - GitHub Repository: https://github.com/blakeedwards3/mvc-tech-blog
-- Deployed URL: 
+- Deployed URL: https://sleepy-earth-26664-d8b904c693b8.herokuapp.com/
 
 ## Website Screenshot
 
