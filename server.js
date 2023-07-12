@@ -17,11 +17,15 @@ const hbs = exphbs.create({ helpers });
 // Session options
 const sess = {
     secret: process.env.SECRET,
-    cookie: {},
+    cookie: {
+        expires: 20 * 60 * 1000
+    },
     resave: false,
     saveUninitialized: true,
     store: new SequelizeStore({ db: sequelize })
 };
+
+app.use(session(sess));
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');

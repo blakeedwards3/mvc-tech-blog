@@ -3,7 +3,7 @@ async function editFormHandler(event) {
 
     // Get values from input fields
     const title = document.querySelector('input[name="post-title"]').value;
-    const post_body = document.querySelector('input[name="post-title"]').value;
+    const post_body = document.querySelector('input[name="body"]').value;
 
     // Extract post ID from current URL
     const id = window.location.toString().split('/')[window.location.toString().split('/').length - 1];
