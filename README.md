@@ -23,3 +23,4 @@ Below is a list of a few resources I used to help complete the assignment and be
 - https://hazelcast.com/glossary/serialization/
 - https://www.w3schools.com/tags/tag_hr.asp#:~:text=The%20tag%20defines%20a,change)%20in%20an%20HTML%20page.
 - http://javascriptissexy.com/handlebars-js-tutorial-learn-everything-about-handlebars-js-javascript-templating/
+- https://coding-boot-camp.github.io/full-stack/heroku/deploy-with-heroku-and-mysql
