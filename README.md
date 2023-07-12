@@ -1,4 +1,5 @@
 # MVC Tech Blog
+
 A tech blogging website that follows the MVS paradigm.
 
 ## Description
